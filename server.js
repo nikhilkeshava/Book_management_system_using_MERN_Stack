@@ -17,6 +17,8 @@ app.use(
 );
 
 app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, “client/build”)))
+
 
 const dbURL = "mongodb://localhost:27017/mern-auth";
 
